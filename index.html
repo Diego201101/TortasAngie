@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tortas Angie</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none;"><h1 style="color: #ffffff; font-size: 1.8rem; margin: 0;">Tortas Angie</h1></a>
+        </div>
+        <nav class="nav">
+            <a href="#" class="nav-link">AYUDA</a>
+            <a href="#" class="nav-link">FAQ</a>
+            <a href="#" class="nav-link">CLIENTES</a>
+            <a href="#" class="nav-link">SERVICIOS</a>
+            <div class="dropdown">
+                <a href="#" class="nav-link">CONOCENOS</a>
+                <div class="dropdown-content">
+                    <a href="#quienes-somos">Quiénes Somos</a>
+                    <a href="#proposito">Propósito</a>
+                    <a href="#elegirnos">¿Por qué elegirnos?</a>
+                </div>
+            </div>
+            <a href="#contacto" class="nav-link primary">CONTACTANOS</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Tortas Angie</h1>
+            <p>Deliciosos pasteles personalizados para toda ocasión</p>
+            <a href="#contacto"><button class="cta-button">EMPEZAR</button></a>
+        </div>
+    </section>
+
+    <section id="quienes-somos">
+        <div class="quienes-somos-contenido">
+            <div class="imagen">
+                <img src="assets/images/pastelera.jpg" alt="Pastelera decorando un pastel"/>
+            </div>
+            <div class="texto">
+                <h1>Maestros en el Arte de la Repostería</h1>
+                <p>
+                    En <strong>Tortas Angie</strong>, no solo hacemos pasteles; creamos experiencias
+                    dulces e inolvidables. Somos un equipo de reposteros apasionados con la misión
+                    de endulzar tus momentos especiales. Desde bodas hasta cumpleaños, cada creación
+                    es única y hecha con ingredientes de la más alta calidad. Nos enorgullecemos de
+                    transformar tus ideas en deliciosas realidades, cuidando cada detalle para que tu
+                    celebración sea perfecta.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="proposito">
+        <div class="proposito-contenido">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=sVFblYOE9Qs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="texto">
+                <h1>Nuestro Propósito</h1>
+                <p>
+                    Nuestro propósito es endulzar la vida de las personas a través de creaciones
+                    únicas y memorables. Creemos que cada ocasión especial merece un toque dulce,
+                    y nos esforzamos por superar expectativas con sabores excepcionales, diseños
+                    innovadores y un servicio personalizado que hace que cada cliente se sienta especial.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="elegirnos">
+        <div class="elegirnos-contenido">
+            <h1>¿Por qué elegir Tortas Angie?</h1>
+            <div class="razones">
+                <div class="razon">
+                    <i class="fas fa-award"></i>
+                    <h3>Calidad Premium</h3>
+                    <p>Usamos solo ingredientes frescos y de la más alta calidad en todas nuestras creaciones.</p>
+                </div>
+                <div class="razon">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Diseños Personalizados</h3>
+                    <p>Cada pastel es una obra de arte única, diseñada especialmente para ti.</p>
+                </div>
+                <div class="razon">
+                    <i class="fas fa-heart"></i>
+                    <h3>Opciones Especiales</h3>
+                    <p>Ofrecemos opciones para dietas especiales: sin azúcar, sin gluten, veganas y más.</p>
+                </div>
+                <div class="razon">
+                    <i class="fas fa-clock"></i>
+                    <h3>Entrega Puntual</h3>
+                    <p>Nos comprometemos a entregar tu pastel perfecto justo cuando lo necesitas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="contacto-contenido">
+            <h1>Contáctanos</h1>
+            <p>Completa el formulario y nos pondremos en contacto contigo</p>
+            
+            <form id="formularioContacto" class="formulario">
+                <div id="mensajeError" class="mensaje-error" style="display: none;"></div>
+                <div id="mensajeEnviado" class="mensaje-enviado" style="display: none;">¡Mensaje enviado con éxito!</div>
+                
+                <div class="form-group">
+                    <label for="nombre">Nombre completo*</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefono">Teléfono*</label>
+                    <input type="text" id="telefono" name="telefono">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo electrónico*</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="tipo-torta">Tipo de torta*</label>
+                    <select id="tipo-torta" name="tipo-torta">
+                        <option value="">Seleccione una opción</option>
+                        <option value="cumpleanos">Cumpleaños</option>
+                        <option value="boda">Boda</option>
+                        <option value="aniversario">Aniversario</option>
+                        <option value="infantil">Infantil</option>
+                        <option value="especial">Ocasió especial</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tipo-evento">Tipo de evento*</label>
+                    <input type="text" id="tipo-evento" name="tipo-evento">
+                </div>
+                
+                <div class="form-group">
+                    <label for="asunto">Asunto*</label>
+                    <textarea id="asunto" name="asunto"></textarea>
+                </div>
+                
+                <div class="form-group-radio">
+                    <label>¿Eres diabético?*</label>
+                    <div class="radio-group">
+                        <input type="radio" id="diabetico-si" name="diabetico" value="si">
+                        <label for="diabetico-si">Sí</label>
+                        <input type="radio" id="diabetico-no" name="diabetico" value="no">
+                        <label for="diabetico-no">No</label>
+                    </div>
+                </div>
+                
+                <div class="form-group-radio">
+                    <label>¿Eres celíaco?*</label>
+                    <div class="radio-group">
+                        <input type="radio" id="celiaco-si" name="celiaco" value="si">
+                        <label for="celiaco-si">Sí</label>
+                        <input type="radio" id="celiaco-no" name="celiaco" value="no">
+                        <label for="celiaco-no">No</label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="cta-button">ENVIAR</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Ayuda o Contacto</h3>
+                <p><i class="fas fa-phone"></i> 995500575</p>
+                <p><i class="fas fa-envelope"></i> hangie70@hotmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/cakeangies" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=%2B51995500575&context=AfcsjaPSXeeTNZQOhj8F3JJe9wJ-q0Kqw1CVZ0xKiG0aHTM-H_TJq85CpmyKOhzbZKKZ9Wu8FwTMsgcHFxZJUwF1PX7gdBcZkP-DBbnyefN9CkEvRqvwS4s9cb1X6KioyYidZhjyNu8ZM8qCHa4t20Q&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawLUOPlleHRuA2FlbQIxMABicmlkETFaeEtya09tUWxORWhNdTZQAR5pp9jWlJzl_UhxMTeFvUQNongr8-PFdy1WfVI6OquJehmwbo-qUcpWMy4UUg_aem_7rueiOumX5DIdVO6mJer6g" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.tiktok.com/@tortas.angeis?_t=ZM-8xjmuvLL5E6&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="links-column">
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Privacidad y Cookies</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Reglamento General</a>
+                </div>
+                <div class="links-column">
+                    <a href="#quienes-somos">Quienes Somos</a>
+                    <a href="#proposito">Nuestro Propósito</a>
+                    <a href="#elegirnos">¿Por qué elegirnos?</a>
+                    <a href="#contacto">Contacto</a>
+                    <a href="#">Comentarios</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Tortas Angie - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="assets/javascript/form-validation.js"></script>
+</body>
+</html>
